@@ -1,0 +1,101 @@
+body{
+		margin: 0;
+	}
+	.container{
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		background: #f2709c;
+		background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
+		background: linear-gradient(to right, #ff9472, #f2709c);
+		overflow-x: hidden;
+	}
+	.container table{
+		display: block;
+		background: #ffffff4d;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 10px 20px #00000036;
+	}
+	.container table caption{
+		font-size: 40px;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		margin-bottom: 20px;
+	}
+	.container table tr td button{
+		background: #ffffff45;
+		min-height: 100px;
+		min-width: 100px;
+		border:none;
+		border-radius: 10px;
+		box-shadow: 0 0px 10px #0000001f;
+		outline: none;
+		font-size:35px;
+	}
+	.container table tr td button:hover{
+		border:2px solid green;
+	}
+
+	#notice{
+		position: fixed;
+		right:2%;
+		top: 5%;
+		background: linear-gradient(to right, #ff9472, #f2709c);
+		width: 237px;
+		height: 49px;
+		border-radius:3px;
+		box-shadow: 0 10px 20px #00000036;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 25px;
+		color: #000;
+		animation: move .8s;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	}
+	@keyframes move {
+		0%{
+			right: -100%;
+		}
+		60%{
+			right: 5%;
+		}
+		100%{
+			right: 2%;
+		}
+	}
+	#reset{
+		padding: 10px 40px;
+		font-size: 25px;
+		margin-top: 20px;
+		background: #ffffff4d;
+		border: none;
+		box-shadow: 0 0px 10px #0000001f;
+		cursor: pointer;
+		border-radius: 3px;
+		margin-bottom: 10px;
+		display: none;
+	}
+	@media (max-width:936px){
+		.container table{
+			margin-top: 50px;
+		}
+	}
+	@media (max-width:400px){
+		#notice{
+			width: 96%;
+		}
+	}
+	@media (max-width: 365px){
+		
+		.container table{
+			padding: 10px;
+		}
+		.container table tr td button{
+			min-width: 80px;
+			min-height: 80px;
+			border-radius:5px;
+		}
+	}
