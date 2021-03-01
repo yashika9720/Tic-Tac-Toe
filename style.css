@@ -78,11 +78,6 @@ body{
 		margin-bottom: 10px;
 		display: none;
 	}
-	@media (max-width:936px){
-		.container table{
-			margin-top: 50px;
-		}
-	}
 	@media (max-width:400px){
 		#notice{
 			width: 96%;
