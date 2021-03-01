@@ -42,43 +42,43 @@ const check = ()=>{
 		removeAttr();
 		resetButton.style.display = 'block';
 	}
-	else if (btns[0].value == "Y" && btns[1].value == "Y" && btns[2].value == "Y") {
-		notice("Player Y is winner");
+	else if (btns[0].value == "O" && btns[1].value == "O" && btns[2].value == "O") {
+		notice("Player O is winner");
 		removeAttr();
 		resetButton.style.display = 'block';
 	}
-	else if (btns[3].value == "Y" && btns[4].value == "Y" && btns[5].value == "Y") {
-		notice("Player Y is winner");
+	else if (btns[3].value == "O" && btns[4].value == "O" && btns[5].value == "O") {
+		notice("Player O is winner");
 		removeAttr();
 		resetButton.style.display = 'block';
 	}
-	else if (btns[6].value == "Y" && btns[7].value == "Y" && btns[8].value == "Y") {
-		notice("Player Y is winner");
+	else if (btns[6].value == "O" && btns[7].value == "O" && btns[8].value == "O") {
+		notice("Player O is winner");
 		removeAttr();
 		resetButton.style.display = 'block';
 	}
-	else if (btns[0].value == "Y" && btns[3].value == "Y" && btns[6].value == "Y") {
-		notice("Player Y is winner");
+	else if (btns[0].value == "O" && btns[3].value == "O" && btns[6].value == "O") {
+		notice("Player O is winner");
 		removeAttr();
 		resetButton.style.display = 'block';
 	}
-	else if (btns[1].value == "Y" && btns[4].value == "Y" && btns[7].value == "Y") {
-		notice("Player Y is winner");
+	else if (btns[1].value == "O" && btns[4].value == "O" && btns[7].value == "O") {
+		notice("Player O is winner");
 		removeAttr();
 		resetButton.style.display = 'block';
 	}
-	else if (btns[2].value == "Y" && btns[5].value == "Y" && btns[8].value == "Y") {
-		notice("Player Y is winner");
+	else if (btns[2].value == "O" && btns[5].value == "O" && btns[8].value == "O") {
+		notice("Player O is winner");
 		removeAttr();
 		resetButton.style.display = 'block';
 	}
-	else if (btns[0].value == "Y" && btns[4].value == "Y" && btns[8].value == "Y") {
-		notice("Player Y is winner");
+	else if (btns[0].value == "O" && btns[4].value == "O" && btns[8].value == "O") {
+		notice("Player O is winner");
 		removeAttr();
 		resetButton.style.display = 'block';
 	}
-	else if (btns[2].value == "Y" && btns[4].value == "Y" && btns[6].value == "Y") {
-		notice("Player Y is winner");
+	else if (btns[2].value == "O" && btns[4].value == "O" && btns[6].value == "O") {
+		notice("Player O is winner");
 		removeAttr();
 		resetButton.style.display = 'block';
 	}else{
@@ -130,7 +130,7 @@ const run = (e)=>{
 	if (turn == "X") {
 		e.innerText = turn;
 		e.setAttribute('value', turn);
-		turn = "Y";
+		turn = "O";
 	}else{
 		e.innerText = turn;
 		e.setAttribute('value', turn);
